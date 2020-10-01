@@ -83,5 +83,5 @@ def sudoku_solver(matrix,textfile):
 matrix=readSudoku(sys.argv[1])
 sudoku_solver(matrix,sys.argv[1])
 
-print("'''''''''''''''''''''''''''''''''''''''''''''''''''''''matrix'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''")
+print('matrix')
 print(sudoku_solver)
