@@ -86,3 +86,5 @@ sudoku_solver(matrix,sys.argv[1])
 print('matrix')
 print('Hello World skvb kjbksv')
 print(sudoku_solver)
+
+# Run command (can change test text file):  python sudoku.py TestCases/test1.txt
