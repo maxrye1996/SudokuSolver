@@ -23,7 +23,7 @@ def readSudoku(textfile):
             break
     return matrix
 
-def check_soduku(row,column,number,matrix_board,l):
+def checksoduku(row,column,number,matrix_board,l):
     check=0
     for i in range(0,l):
         if matrix_board[row][i]==number:
@@ -73,7 +73,7 @@ def sudoku_solver(matrix,textfile):
 
     #print("hello")
     for i in range(0,10):
-        if check_soduku(row,column,i,matrix,l):
+        if checksoduku(row,column,i,matrix,l):
             matrix[row][column]=i
             if sudoku_solver(matrix,textfile):
                 return True
@@ -83,5 +83,8 @@ def sudoku_solver(matrix,textfile):
 matrix=readSudoku(sys.argv[1])
 sudoku_solver(matrix,sys.argv[1])
 
-print("'''''''''''''''''''''''''''''''''''''''''''''''''''''''matrix'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''")
+print('matrix')
+print('Hello World skvb kjbksv')
 print(sudoku_solver)
+
+# Run command (can change test text file):  python sudoku.py TestCases/test1.txt
