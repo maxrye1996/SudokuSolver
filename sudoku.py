@@ -49,12 +49,12 @@ def checksoduku(row,column,number,matrix_board,l):
         return True
 
 class calls:
-    number_of_calls=0
+    numberOfCalls=0
 c = calls()
 def sudoku_solver(matrix,textfile):
     f=open(textfile,"r")
     l=int(len(f.readline()))-1
-    c.number_of_calls=c.number_of_calls+1
+    c.numberOfCalls=c.numberOfCalls+1
     break_condition=0
     for i in range(0,l):
         for j in range(0,l):
@@ -64,11 +64,10 @@ def sudoku_solver(matrix,textfile):
                 column=j
                 break
     if break_condition==0:
-        print("Naive Backtracking Algorithm Solution: ")
         for i in matrix:
             print(i)
-        print("Amount of Recursions")
-        print(c.number_of_calls)
+        print("Amount of iterations")
+        print(c.numberOfCalls)
         exit(0)
 
     #print("hello")
